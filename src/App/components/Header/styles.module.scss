@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1.25rem 0;
+  gap: 1.5rem;
+}
+
+.navbar {
+  border-top: 1px solid var(--gray);
+  align-self: stretch;
+  display: flex;
+  justify-content: end;
+  gap: 2.85rem;
+  padding-top: 1.25rem;
+}
+
+.nav-link {
+  color: var(--gray);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  &:hover {
+    color: var(--white);
+  }
+
+  &.active {
+    color: var(--white);
+    font-weight: 600;
+  }
+}
+
+.logo {
+  height: 3rem;
+}

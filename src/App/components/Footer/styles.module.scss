@@ -1,0 +1,34 @@
+.footer {
+  border-top: 1px solid var(--red);
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-evenly;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.next-race-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.next-race-circuit {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.next-race-date {
+  font-size: 3rem;
+  color: var(--gray);
+}
+
+.contact-info-wrapper {
+  gap: 1rem;
+}

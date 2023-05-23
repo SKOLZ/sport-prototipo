@@ -1,0 +1,54 @@
+.carousel .control-next.control-arrow::before,
+.carousel .control-prev.control-arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-130%, -50%);
+}
+
+.carousel.carousel-slider .control-arrow {
+  width: 30px;
+  height: 100px;
+  top: calc(50% - 50px);
+}
+
+.carousel-status {
+  display: none;
+}
+
+.carousel .thumbs {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .slide .legend {
+  opacity: 0.7;
+  margin: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  border-radius: 0;
+}
+
+.carousel:hover .slide .legend {
+  opacity: 0.8;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: var(--black);
+  opacity: 0.4;
+
+  &:hover {
+    background: var(--black);
+    opacity: 0.7;
+  }
+}
+
+.carousel-slider {
+  border: 1px solid var(--red);
+}
+
+.carousel .thumb {
+  border: none;
+}

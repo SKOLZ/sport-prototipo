@@ -10,14 +10,16 @@ export const Table: React.FC<Props> = ({headers, elements, className}) => {
   return (
     <table className={`${styles.table} ${className}`}>
       <thead className={styles.tableHeader}>
-        {headers.map(header => (
-          <th className={styles.tableHeaderItem}>{header}</th>
-        ))}
+        <tr>
+          {headers.map(header => (
+            <th key={header} className={styles.tableHeaderItem}>{header}</th>
+          ))}
+        </tr>
       </thead>
       <tbody className={styles.tableBody}>
         {
-          elements.map((element) => (
-            <tr className={styles.tableRow}>
+          elements.map((element, index) => (
+            <tr key={index} className={styles.tableRow}>
               {
                 Object.keys(element).map(key => <td className={styles.tableRowItem}>{element[key]}</td>)
               }

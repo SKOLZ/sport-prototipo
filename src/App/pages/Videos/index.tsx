@@ -1,5 +1,5 @@
 import YoutubeEmbed from "./components/YoutubeEmbed";
-import { highlightedVideos, regularVideos } from "./data";
+import { highlightedVideos, regularVideos } from "../../../data/videosData";
 import styles from "./styles.module.scss";
 
 export const Videos: React.FC = () => {

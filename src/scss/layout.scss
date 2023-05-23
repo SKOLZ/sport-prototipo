@@ -2,6 +2,9 @@ $media-breakpoint: 960px !default;
 $max-item-size: 3 !default;
 $max-order-size: 3 !default;
 
+$gap-step: 5px;
+$max-gap-size: 10 !default;
+
 .column {
   display: flex;
   flex-direction: column;
@@ -131,6 +134,12 @@ $max-order-size: 3 !default;
 @for $i from 1 through $max-order-size {
   .order-#{$i} {
     order: $i;
+  }
+}
+
+@for $i from 1 through $max-gap-size {
+  .gap-#{$i} {
+    gap: $i * $gap-step;
   }
 }
 

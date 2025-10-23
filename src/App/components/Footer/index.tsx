@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
         </a>
       </div>
       <div className={styles.footerBox}>
-        <h4 className="title-3">1ra Fecha</h4>
+        <h4 className="title-3">8va Fecha</h4>
         <h4 className="title-3 uppercase">Proximamente</h4>
         {/* <div className={styles.nextRaceWrapper}>
           <p className={styles.nextRaceCircuit}>Autodromo Mouras: Chico</p>

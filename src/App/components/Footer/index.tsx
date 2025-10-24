@@ -28,11 +28,11 @@ export const Footer: React.FC = () => {
       </div>
       <div className={styles.footerBox}>
         <h4 className="title-3">8va Fecha</h4>
-        <h4 className="title-3 uppercase">Proximamente</h4>
-        {/* <div className={styles.nextRaceWrapper}>
+        {/* <h4 className="title-3 uppercase">Proximamente</h4> */}
+        <div className={styles.nextRaceWrapper}>
           <p className={styles.nextRaceCircuit}>Autodromo Mouras: Chico</p>
-          <h3 className={styles.nextRaceDate}>13-04-2023</h3>
-        </div> */}
+          <h3 className={styles.nextRaceDate}>16-11-2025</h3>
+        </div>
       </div>
       <div className={styles.footerBox}>
         <a href="">

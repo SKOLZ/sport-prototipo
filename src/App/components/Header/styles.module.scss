@@ -6,6 +6,14 @@
   gap: 1.5rem;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
 .navbar {
   border-top: 1px solid var(--gray);
   align-self: stretch;
@@ -33,4 +41,103 @@
 
 .logo {
   height: 3rem;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  
+  span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--white);
+    margin: 2px 0;
+    transition: 0.3s;
+  }
+}
+
+// Desktop styles (1024px and above)
+@media (min-width: 1024px) {
+  .header-top {
+    justify-content: flex-start;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+}
+
+// Mobile styles (below 1024px)
+@media (max-width: 1023px) {
+  .header-top {
+    gap: 1rem;
+  }
+  
+  .logo {
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: calc(100% - 3rem); // Account for hamburger width + gap
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: none;
+    padding: 0;
+    transform: translateX(-100%);
+    z-index: 1000;
+    transition: none; // Disable transition by default
+    
+    &.mobile-menu-open {
+      transform: translateX(0);
+      transition: transform 0.3s ease-in-out; // Only animate when opening/closing
+    }
+  }
+  
+  .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  // Hamburger animation when menu is open
+  .menu-open .hamburger {
+    position: relative;
+    z-index: 1001; // Higher than the menu z-index
+    
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+  }
 }

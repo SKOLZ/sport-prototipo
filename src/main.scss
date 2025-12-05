@@ -36,6 +36,11 @@ body {
   min-height: 100vh;
 }
 
+// Prevent scrolling when mobile menu is open
+body:has(.menu-open) {
+  overflow: hidden;
+}
+
 .title-3 {
   font-size: 1.75rem;
   color: var(--white);
@@ -63,5 +68,12 @@ body {
 
   &.row {
     flex-direction: row;
+  }
+}
+
+@media screen and (width < 1024px) {
+  .page-container.row {
+    flex-direction: column;
+    align-items: normal;
   }
 }

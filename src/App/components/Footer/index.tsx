@@ -12,14 +12,14 @@ export const Footer: React.FC = () => {
       <div className={styles.footerBox}>
         <h4 className="title-3">Reglamento 2023</h4>
         <a
-          href="reglamento_tecnico2024.pdf"
+          href="reglamento_tecnico2025.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={techRuleset} alt="reglamento tecnico" />
         </a>
         <a
-          href="reglamento_deportivo2023.pdf"
+          href="reglamento_deportivo2025.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

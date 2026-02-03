@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerBox}>
-        <h4 className="title-3">Reglamento 2023</h4>
+        <h4 className="title-3">Reglamento 2025</h4>
         <a
           href="reglamento_tecnico2025.pdf"
           target="_blank"
@@ -27,11 +27,11 @@ export const Footer: React.FC = () => {
         </a>
       </div>
       <div className={styles.footerBox}>
-        <h4 className="title-3">8va Fecha</h4>
+        <h4 className="title-3">1ra Fecha</h4>
         {/* <h4 className="title-3 uppercase">Proximamente</h4> */}
         <div className={styles.nextRaceWrapper}>
           <p className={styles.nextRaceCircuit}>Autodromo Mouras: Chico</p>
-          <h3 className={styles.nextRaceDate}>16-11-2025</h3>
+          <h3 className={styles.nextRaceDate}>22-03-2026</h3>
         </div>
       </div>
       <div className={styles.footerBox}>
